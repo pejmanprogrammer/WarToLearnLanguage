@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="colorApp">#F44336</color>
+    <color name="progressbar">#9322d9</color>
+
+
+    <color name="cardcolor1">#40C4FF</color>
+    <color name="cardcolor2">#80CBC4</color>
+    <color name="cardcolor3">#4CAF50</color>
+    <color name="cardcolor4">#81D4FA</color>
+    <color name="cardcolor5">#5C6BC0</color>
+
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="grey_dialog_box">#d98037</color>
+
+    <color name="startcolorbutton" >#0591f5</color>
+    <color name="centercolorbutton" >#0daeed</color>
+    <color name="endcolorbutton" >#1bb4d2</color>
+</resources>
+
+

@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/activity_show"
+    android:background="@color/colorApp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_weight=".15"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <ImageView
+            android:scaleType="centerInside"
+            android:src="@drawable/studenthat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight=".6"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+
+        <android.support.v4.view.ViewPager
+
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_weight=".2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".2">
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".175"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".25">
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".75">
+
+                <com.vincan.rotatecircleimageview.RotateCircleImageView
+
+                    android:id="@+id/imgfreeenergy"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="imgfreeenergy"
+                    android:src="@drawable/goldfree"
+                    app:rciv_border_padding="2dp"
+                    app:rciv_border_style="rotate"
+                    app:rciv_border_width="2dp" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".25"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".8">
+
+                <com.vincan.rotatecircleimageview.RotateCircleImageView
+                    android:id="@+id/imgstart"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="imgstart"
+                    android:padding="4dp"
+                    android:src="@drawable/start"
+                    app:rciv_border_style="rotate"
+                    app:rciv_border_track_start_color="#ffffff"
+                    app:rciv_border_width="6dp" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".2"
+                android:gravity="center|top">
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".175"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".25">
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".75">
+
+
+                <com.vincan.rotatecircleimageview.RotateCircleImageView
+                    android:id="@+id/imgbuyenergy"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="imgbuyenergy"
+                    android:src="@drawable/bank"
+                    app:rciv_border_padding="2dp"
+                    app:rciv_border_style="rotate"
+                    app:rciv_border_width="2dp" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".2">
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_weight=".05"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+
+
+        <LinearLayout
+            android:layout_weight=".2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+        </LinearLayout>
+
+
+
+
+
+
+        <LinearLayout
+            android:gravity="center|top"
+            android:layout_weight=".175"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:textSize="12dp"
+                android:textColor="#110a5e"
+                android:text="سکه رایگان"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_weight=".25"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+        </LinearLayout>
+
+
+
+
+
+
+        <LinearLayout
+            android:gravity="center|top"
+            android:layout_weight=".175"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+
+
+            <TextView
+                android:textSize="12sp"
+                android:textColor="#110a5e"
+                android:text="بانک سکه"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_weight=".2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

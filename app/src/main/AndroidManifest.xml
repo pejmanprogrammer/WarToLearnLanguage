@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mohandespejman.wartolearnthelanguage"
+    android:installLocation="preferExternal">
+
+    <uses-permission android:name="com.farsitel.bazaar.permission.PAY_THROUGH_BAZAAR"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+
+
+    <application
+        android:name=".G"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+
+        >
+
+        <activity android:name=".ActivityStart"
+            android:screenOrientation="portrait"
+            >
+
+        <intent-filter>
+
+        <action android:name="android.intent.action.MAIN"/>
+
+        <category android:name="android.intent.category.LAUNCHER"/>
+    </intent-filter>
+
+    </activity>
+
+        <receiver android:name=".BroadCastShowNotification"
+            android:screenOrientation="portrait">
+
+
+        </receiver>
+        <activity
+            android:name=".ActivityFreeEnergy"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+
+        <activity
+            android:name=".ActivityBuy"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity
+            android:name=".ActivityMain"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+
+        <activity
+            android:name=".ActivityTest"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+
+        <activity
+            android:name=".ActivityCards"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity
+            android:name=".GoogleTranslate"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity
+            android:name=".ActivitySelectPlayer"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity
+            android:name=".ActivityAnswerTest"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity
+            android:name=".ActivityPrice"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity
+            android:name=".ActivitySelectHero"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity android:name="ir.tapsell.sdk.TapsellAdActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize" >
+        </activity>
+
+
+
+
+
+    </application>
+
+
+</manifest>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorApp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+
+                android:id="@+id/imgcardgame"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:padding="5dp"
+                android:src="@drawable/card" />
+
+            <ImageView
+
+                android:id="@+id/imgseevidio"
+                android:layout_marginLeft="4dp"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:padding="5dp"
+                android:layout_toRightOf="@+id/imgcardgame"
+                android:src="@drawable/percend" />
+
+
+
+
+
+
+            <FrameLayout
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true">
+
+
+                <TextView
+                    android:id="@+id/txtenergy"
+                    android:layout_width="60dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="6dp"
+                    android:background="@drawable/backtextenergy"
+                    android:gravity="left"
+                    android:text="13"
+                    android:textColor="#ffffff"
+                    android:textSize="17dp" />
+
+                <com.vincan.rotatecircleimageview.RotateCircleImageView
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:src="@drawable/coin"
+                    app:rciv_border_padding="2dp"
+                    app:rciv_border_style="rotate"
+                    app:rciv_border_track_start_color="#ffee00"
+                    app:rciv_border_width="2dp"
+                    app:rciv_circle_background_color="#2d2" />
+
+
+            </FrameLayout>
+
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".825">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycleplayers"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp">
+
+            </android.support.v7.widget.RecyclerView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".1">
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginRight="15dp"
+                    android:id="@+id/imgplaygame"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/startgame"  />
+
+
+
+
+
+
+                <ImageView
+                    android:id="@+id/player1"
+                    android:layout_marginLeft="3dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    />
+                <ImageView
+                    android:layout_toRightOf="@+id/player1"
+                    android:id="@+id/player2"
+                    android:layout_marginLeft="3dp"
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    />
+                <ImageView
+                    android:layout_toRightOf="@+id/player2"
+                    android:id="@+id/player3"
+                    android:layout_marginLeft="3dp"
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    />
+                <ImageView
+                    android:layout_toRightOf="@+id/player3"
+                    android:id="@+id/player4"
+                    android:layout_marginLeft="3dp"
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    />
+
+
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".075">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:id="@+id/textstart"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:gravity="center"
+                    android:text="شروع"
+                    android:textColor="#000000" />
+
+
+
+                <ImageView
+                    android:id="@+id/imgrefresh"
+                    android:layout_width="35dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:padding="3dp"
+                    android:src="@drawable/refresh" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

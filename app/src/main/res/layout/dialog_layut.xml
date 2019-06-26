@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/backdialog"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+
+            android:id="@+id/imgdialog"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="6dp"
+            />
+
+        <TextView
+
+            android:textSize="16dp"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="12dp"
+            android:id="@+id/txtdialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="10dp"
+            android:text="#ffffff" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <Button
+
+                android:layout_marginBottom="8dp"
+                android:textColor="#ffffff"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/backbutton"
+                android:id="@+id/btnyes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:text="باشه" />
+
+            <Button
+
+            android:layout_marginTop="8dp"
+            android:visibility="invisible"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/backbutton"
+            android:id="@+id/btnno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:text="بی خیال" />
+
+
+            <Button
+
+                android:layout_marginTop="8dp"
+                android:visibility="invisible"
+                android:textColor="#ffffff"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/backbutton"
+                android:id="@+id/btnyestwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="بی خیال" />
+
+
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
